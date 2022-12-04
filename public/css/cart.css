@@ -1,0 +1,102 @@
+#wp-content #cart .list-product-cart table thead {
+    background-color: #f1f1f1;
+}
+
+#wp-content #cart {
+    width: 1640px;
+    margin: 0px auto;
+    /* margin-top: 20px; */
+    background-color: #fdfdfd;
+}
+
+#wp-content #cart .list-product-cart form {
+    padding: 20px;
+}
+
+#wp-content #cart .list-product-cart #listcart_replace {
+    display: none;
+}
+
+#wp-content #cart .list-product-cart table {
+    margin-bottom: 50px;
+}
+
+#wp-content #cart .list-product-cart table thead tr td {
+    text-align: center;
+    color: black;
+    padding: 10px;
+    width: 12%;
+}
+
+#wp-content #cart .list-product-cart table tbody tr td a img {
+    width: 80%;
+    height: auto;
+}
+
+#wp-content #cart .list-product-cart table tbody tr td i:hover {
+    cursor: pointer;
+}
+
+#wp-content #cart .list-product-cart table tbody tr td input {
+    padding: 10px;
+}
+
+#wp-content #cart .list-product-cart table tbody tr td {
+    border-bottom: 1px solid black;
+}
+
+#wp-content #cart .list-product-cart table tbody tr td {
+    padding: 10px;
+    text-align: center;
+}
+
+#wp-content #cart .list-product-cart p {
+    text-align: right;
+    /* display: inline-block; */
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#wp-content #cart .list-product-cart .update-checkout {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+#wp-content #cart .list-product-cart .update-checkout a {
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+#wp-content #cart .list-product-cart .update-checkout .update-cart {
+    display: inline-block;
+    padding: 12px;
+    border: none;
+    background-color: #ddd;
+    color: black;
+}
+
+#wp-content #cart .list-product-cart .update-checkout .update-cart:hover {
+    background-color: gray;
+    color: white;
+}
+
+#wp-content #cart .list-product-cart .update-checkout .checkout:hover {
+    background-color: tomato;
+}
+
+#wp-content #cart .list-product-cart .update-checkout .checkout {
+    background-color: red;
+    color: white;
+    /* width: 6%; */
+}
+
+#wp-content #cart .list-product-cart span {
+    margin-bottom: 10px;
+    display: block;
+}
+
+#wp-content #cart .list-product-cart a {
+    display: block;
+    margin-bottom: 5px;
+}

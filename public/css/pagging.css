@@ -1,0 +1,37 @@
+#wp-content .content .product #pagging {
+    /* margin-bottom: 20px; */
+    padding-bottom: 40px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#wp-content .content .product #pagging ul {
+    list-style: none;
+    /* display: inline; */
+    /* padding: 0px auto; */
+    /* margin: 0px auto!important; */
+    margin-bottom: 20px;
+}
+
+
+/* #wp-content .content .product #pagging ul a {
+    display: inline-block;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+} */
+
+#wp-content .content .product #pagging ul a:hover {
+    cursor: pointer;
+}
+
+#wp-content .content .product #pagging ul li {
+    display: inline-block;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+}

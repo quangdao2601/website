@@ -1,0 +1,93 @@
+#wp-content #checkout {
+    display: flex;
+    width: 1640px;
+    margin: 0px auto;
+    margin-top: 20px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+#wp-content #checkout .info-customer {
+    width: 65%;
+    margin-bottom: 100px;
+}
+
+#wp-content #checkout .info-cart {
+    width: 35%;
+    margin-bottom: 100px;
+}
+
+#wp-content #checkout .info-customer h2,
+#wp-content #checkout .info-cart h2 {
+    margin-bottom: 10px;
+    width: 80%;
+    padding: 10px 0px;
+    border-bottom: 1px solid red;
+}
+
+#wp-content #checkout .info-customer label,
+#wp-content #checkout .info-customer input,
+#wp-content #checkout .info-customer textarea {
+    display: block;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+#wp-content #checkout .info-customer input,
+#wp-content #checkout .info-customer textarea {
+    padding: 10px;
+}
+
+#wp-content #checkout .info-cart table {
+    width: 100%;
+}
+
+#wp-content #checkout .info-cart table tbody tr {
+    margin-bottom: 10px;
+}
+
+#wp-content #checkout .info-cart table thead tr td {
+    width: 50%;
+    padding: 15px 0px;
+}
+
+#wp-content #checkout .info-cart table tbody tr td,
+#wp-content #checkout .info-cart table tfoot tr td {
+    padding: 15px 0px;
+}
+
+#wp-content #checkout .info-cart table thead tr td:nth-child(2),
+#wp-content #checkout .info-cart table tbody tr td:nth-child(2),
+#wp-content #checkout .info-cart table tfoot tr td:nth-child(2) {
+    text-align: right;
+}
+
+#wp-content #checkout .info-cart p {
+    margin-bottom: 15px;
+}
+
+#wp-content #checkout .info-cart input {
+    margin-right: 20px;
+}
+
+#wp-content #checkout .info-cart label {
+    margin-right: 10px;
+}
+
+#wp-content #checkout .info-cart input[type="submit"] {
+    display: block;
+    padding: 10px;
+    width: 20%;
+    margin-top: 15px;
+    border: none;
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+}
+
+#wp-content #checkout .info-cart input[type="submit"]:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}

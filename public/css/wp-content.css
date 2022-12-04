@@ -1,0 +1,185 @@
+.sidebar .top {
+    padding-top: 10px;
+    display: flex;
+    width: 1640px;
+    margin: 0px auto;
+}
+
+.sidebar .top .slider {
+    width: 50%;
+}
+
+.sidebar .top .banner {
+    width: 50%;
+}
+
+.sidebar .top .slider a img,
+.sidebar .top .banner a img {
+    width: 100%;
+    height: auto;
+}
+
+#wp-content .content .product {
+    width: 1640px;
+    margin: 0px auto;
+}
+
+#wp-content .content {
+    background-color: #f7f7f7;
+}
+
+.sidebar .menu-product {
+    margin-bottom: 10px;
+    width: 1640px;
+    margin: 0px auto;
+}
+
+.sidebar .menu-product .owl-carousel {
+    margin-top: 50px;
+    /* justify-content: space-between; */
+}
+
+.sidebar .menu-product .owl-carousel .item {
+    width: 30%;
+    text-align: center;
+}
+
+.sidebar .menu-product .owl-carousel .item .img a,
+.sidebar .menu-product .owl-carousel .item .tendanhmuc a {
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar .desc {
+    width: 1640px;
+    margin: 0px auto;
+}
+
+
+/* .sidebar .menu-product ul a:hover {
+    background-color: red;
+    color: white;
+} */
+
+.sidebar .desc {
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 60px;
+}
+
+.sidebar .desc .title {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#wp-content .content .product #list-product ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#wp-content .content .product #list-product ul a {
+    width: 19.3%;
+    margin-bottom: 30px;
+    /* border: 1px solid gray; */
+    text-decoration: none;
+    margin-right: 5px;
+    color: black;
+    height: 605px;
+    background-color: white;
+}
+
+#wp-content .content .product #list-product ul a li .img {
+    height: 360px;
+}
+
+#wp-content .content .product #list-product ul a li .img img {
+    width: 100%;
+    height: auto;
+    /* padding-bottom: 20px; */
+}
+
+#wp-content .content .product #list-product ul a li .info {
+    padding: 40px;
+    padding-left: 20px;
+    background-color: white;
+}
+
+#wp-content .content .product #list-product ul a:hover {
+    box-shadow: 0 1px 4px;
+}
+
+#wp-content .content .product #list-product ul a li .info:hover :hover {
+    cursor: pointer;
+}
+
+#wp-content .content .product #list-product ul a li .info:hover .name-product {
+    color: blue;
+}
+
+#wp-content .content .product #list-product ul a li .info .name-product,
+#wp-content .content .product #list-product ul a li .info .price,
+#wp-content .content .product #list-product ul a li .info .rate {
+    margin-bottom: 10px;
+}
+
+#wp-content .content .product #list-product ul a li .info .rate i {
+    color: gold;
+}
+
+#wp-content .content .product .top_product .owl-carousel .item {
+    padding-bottom: 20px;
+}
+
+#wp-content .content .product .top_product {
+    padding: 45px;
+    margin-bottom: 20px;
+    background-color: blueviolet;
+}
+
+#wp-content .content .product .top_product .owl-carousel .item a .img {
+    height: 250px;
+}
+
+#wp-content .content .product .top_product .owl-carousel .item a .img img {
+    width: 100%;
+    height: auto;
+}
+
+#wp-content .content .product .top_product .owl-carousel .item a {
+    text-decoration: none;
+    color: black;
+}
+
+#wp-content .content .product .top_product .owl-carousel .item {
+    background-color: white;
+    padding-top: 10px;
+    min-height: 500px;
+    /* width: 50%; */
+}
+
+#wp-content .content .product .top_product .owl-carousel .item a .info {
+    padding-left: 30px;
+    margin-top: 20px;
+}
+
+#wp-content .content .product .top_product .owl-carousel .item a .info p {
+    margin-bottom: 10px;
+}
+
+#wp-content .content .product .top_product .owl-carousel .item a .info .name-product {
+    min-height: 133px;
+}
+
+#wp-content .content .product .top_product .owl-carousel .item a .info .rate {
+    color: gold;
+}
+
+#wp-content .content .product h3 {
+    padding: 20px 0px;
+    font-size: 30px;
+}
+
+.none {
+    display: none!important;
+}

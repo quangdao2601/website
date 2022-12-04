@@ -1,0 +1,84 @@
+#wp-content {
+    background-color: #f5f5f5;
+}
+
+#yourinfo {
+    padding: 20px;
+    width: 1640px;
+    margin: 0px auto;
+    display: flex;
+}
+
+#yourinfo .left {
+    width: 20%;
+    padding-top: 20px;
+    /* display: flex; */
+}
+
+#yourinfo .left .avata {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+#yourinfo .left .avata img {
+    width: 14%;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    height: 14%;
+}
+
+#yourinfo .left .avata p {
+    padding-left: 10px;
+}
+
+#yourinfo .left .menu p i {
+    color: cornflowerblue;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+#yourinfo .left .menu ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+#yourinfo .left .menu ul a {
+    display: block;
+    margin: 15px 0px;
+    text-decoration: none;
+}
+
+#yourinfo .left .menu ul a:hover {
+    color: red;
+    cursor: pointer;
+}
+
+#yourinfo .right {
+    width: 80%;
+    padding: 20px;
+    background-color: white;
+}
+
+#yourinfo .right h3,
+#yourinfo .right p {
+    margin-bottom: 10px;
+}
+
+#yourinfo .right form input,
+#yourinfo .right form textarea {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    margin: 20px 0px;
+}
+
+#yourinfo .right form input[type='submit'] {
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+}
+
+#yourinfo .right form input[type='submit']:hover {
+    background-color: red;
+}

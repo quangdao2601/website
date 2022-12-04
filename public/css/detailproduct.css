@@ -1,0 +1,147 @@
+#wp-content .detailproduct {
+    width: 1640px;
+    margin: 0px auto;
+    margin-bottom: 300px;
+    /* background-color: #; */
+}
+
+
+/* #wp-content {
+    background-color: #f7f7f7;
+} */
+
+#wp-content .detailproduct .detail {
+    display: flex;
+    background: transparent;
+}
+
+#wp-content .detailproduct .detail .image {
+    width: 30%;
+    border-right: 1px solid gray;
+}
+
+#wp-content .detailproduct .detail .more-info {
+    width: 70%;
+    padding-left: 30px;
+}
+
+#wp-content .detailproduct .detail .more-info h2 {
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+#wp-content .detailproduct .detail .more-info input {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background-color: green;
+    color: white;
+}
+
+#wp-content .detailproduct .detail .more-info a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background: green;
+    color: white;
+    width: 15%;
+}
+
+#wp-content .detailproduct .detail .more-info input:hover {
+    cursor: pointer;
+}
+
+#wp-content .detailproduct .detail .image a img {
+    width: 100%;
+    height: auto;
+}
+
+#wp-content .detailproduct .descproduct h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#wp-content .detailproduct .same {
+    margin-top: 50px;
+}
+
+
+/* #wp-content .detailproduct .same ul {
+    list-style: none;
+    display: flex;
+    padding: 20px 0px 20px 10px;
+} */
+
+#wp-content .detailproduct .same .owl-carousel .item {
+    /* width: 19%; */
+    /* margin-bottom: 30px; */
+    /* border: 1px solid gray; */
+    /* text-decoration: none; */
+    margin-right: 15px;
+    color: black;
+    height: 440px;
+    background-color: white;
+}
+
+#wp-content .detailproduct .same .owl-carousel .item a {
+    text-decoration: none;
+    color: black;
+}
+
+#wp-content .detailproduct .same .owl-carousel .item a .img img {
+    width: 100%;
+    height: auto;
+}
+
+#wp-content .detailproduct .same .owl-carousel .item a .info {
+    padding-left: 30px;
+    padding-top: 20px;
+    background-color: white;
+}
+
+#wp-content .detailproduct .same .owl-carousel .item a:hover {
+    box-shadow: 0 1px 4px;
+}
+
+#wp-content .detailproduct .same .owl-carousel .item .info:hover {
+    cursor: pointer;
+}
+
+#wp-content .detailproduct .same .owl-carousel .item a .info:hover .name-product {
+    color: blue;
+}
+
+#wp-content .detailproduct .same .info .name-product,
+#wp-content .detailproduct .same .info .price,
+#wp-content .detailproduct .same .info .rate {
+    margin-bottom: 10px;
+}
+
+#wp-content .detailproduct .same .info .rate i {
+    color: gold;
+}
+
+#wp-content .detailproduct .same,
+#wp-content .detailproduct .descproduct,
+#wp-content .detailproduct .detail,
+#wp-content .detailproduct .comments {
+    background-color: #f7f7f7;
+}
+
+#wp-content .detailproduct .descproduct,
+#wp-content .detailproduct .detail {
+    line-height: 2;
+}
+
+#wp-content .detailproduct .descproduct p img {
+    width: 60%!important;
+    height: auto!important;
+}
+
+
+/* #wp-content .detailproduct .descproduct p img {
+        width: 100%!important;
+        height: auto!important;
+    } */
