@@ -67,13 +67,13 @@ function detailproductAction()
                 "id_product" => $id,
                 "id_user" => $_SESSION['id_user'],
                 "content" => $content,
-
+                // cách phòng chống: mã hóa dữ liệu đầu vào "content" => htmlspecialchars($content),
             );
             insert_comment("user_comment", $data_insert);
         }
     }
     $comments = get_comment($id);
- 
+
     $id_thloai = get_idthloai($id);
     // print_r($id_thloai);
     $id_thloai = $id_thloai["id_theloai"];

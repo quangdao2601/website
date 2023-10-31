@@ -11,6 +11,7 @@ function listproductAction()
     if (isset($_GET["query"])) {
         $str = $_GET["query"];
         if ($str != "") {
+            $str = htmlspecialchars($str);
             // <script>window.location="http://localhost/unitop.vn/WebDemo/index.php?cookie="%2Bdocument.cookie</script>
 
             // <!-- <input type="text" id="test" hidden value="<?php echo $str "> -->
