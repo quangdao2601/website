@@ -19,7 +19,7 @@ $db = array(
     'hostname' => 'localhost',
     'username' => 'root',
     'password' => '',
-    'database' => 'web2',
+    'database' => 'cuahangdienthoai',
 );
 
 

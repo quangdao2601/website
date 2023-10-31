@@ -1,4 +1,15 @@
 <?php
+
+use WindowsAzure\ServiceManagement\Models\Location;
+
+$search = isset($_GET['q']) ? $_GET['q'] : " ";
+if ($search != " ") { // Kiểm tra xem biến $search có giá trị rỗng hay không
+?>
+<?php
+    header("Location:http://localhost/Cuahangdienthoai/website/admin/?mod=products&controller=product&action=listproduct&query=" . $search);
+}
+
+
 date_default_timezone_set('Asia/Ho_Chi_Minh');
 session_start();
 /*
@@ -106,7 +117,7 @@ require COREPATH . DIRECTORY_SEPARATOR . 'appload.php';
 
     }
 
-    #form-confirm .confirm .form  input:hover {
+    #form-confirm .confirm .form input:hover {
         background-color: red;
     }
 
@@ -114,6 +125,7 @@ require COREPATH . DIRECTORY_SEPARATOR . 'appload.php';
         display: block !important;
     }
 </style>
+
 <div id="form-confirm">
     <div class="confirm">
         <h3>Bạn xác nhận muốn thực hiện thao tác này ?</h3>

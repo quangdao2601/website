@@ -56,7 +56,24 @@ function homeAction()
 
 function detailproductAction()
 {
+
+
     $id = $_GET["id"];
+    if (isset($_POST['btn_submit'])) {
+        if (!empty($_POST['comment'])) {
+            $content = $_POST['comment'];
+            $id_user = $_SESSION['id_user'];
+            $data_insert = array(
+                "id_product" => $id,
+                "id_user" => $_SESSION['id_user'],
+                "content" => $content,
+
+            );
+            insert_comment("user_comment", $data_insert);
+        }
+    }
+    $comments = get_comment($id);
+ 
     $id_thloai = get_idthloai($id);
     // print_r($id_thloai);
     $id_thloai = $id_thloai["id_theloai"];
@@ -65,9 +82,11 @@ function detailproductAction()
     $info_product = get_info_product($id);
     $data["info_product"] = $info_product;
     $data["same_category"] = $same_category;
+    $data["comments"] = $comments;
     // echo "<pre>";
     // print_r($info_product);
     // echo "</pre>";
+
     load_view("detailproduct", $data);
 }
 
@@ -156,7 +175,7 @@ function searchAction()
 
     $lp = [];
     foreach ($ids as $id) {
-        $lp[] = get_list_product_by_name($id,$query);
+        $lp[] = get_list_product_by_name($id, $query);
     }
     $list = [];
     foreach ($lp as $p) {
@@ -166,8 +185,8 @@ function searchAction()
             }
         }
     }
-   $str="";
-    if($query != ""){
+    $str = "";
+    if ($query != "") {
         $str = "<ul style='min-height:800px; overflow:scroll'>";
         foreach ($list as $item) {
             $str .= "   <a style='text-decoration:none' href='?mod=home&action=detailproduct&id=" . $item["id"] . "'><li style='padding:10px 0px' ><div class='img'> <img style='width:100%;height:auto' src='    " . url_img() . $item["hinhanh"] . "' alt='' /></div> <div class='info' style='color:black'><p class='name-product'>" . $item["tensanpham"] . "</p><p class='price'><strong>" . currency_format($item["dongia"]) . "</strong><p><div class='rate' style='color:gold'><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star-half-stroke'></i> </div> </div></li> </a>";
@@ -175,5 +194,4 @@ function searchAction()
         $str .= "</ul>";
     }
     echo $str;
-
 }

@@ -8,6 +8,14 @@ function get_List_id_category()
     return db_fetch_array("select theloai.danhmuccha,theloai.id_theloai ,theloai.ten_theloai from theloai,trangthaidanhmuc where theloai.trangthai=trangthaidanhmuc.id_trangthai AND theloai.trangthai='0' ");
 }
 
+function get_comment($id){
+    return db_fetch_array("select user_comment.content,nguoidung.hovaten from user_comment,nguoidung where user_comment.id_product='{$id}' AND user_comment.id_user = nguoidung.id_user");
+}
+
+function insert_comment($table, $data)
+{
+    return db_insert($table, $data);
+}
 function get_list_product_by_cateory($id, $type, $str)
 {
     return db_fetch_array("SELECT *from sanpham,trangthaisanpham,theloai WHERE sanpham.tinhtrang=trangthaisanpham.id_trangthainguoidung AND sanpham.id_theloai=theloai.id_theloai AND sanpham.id_theloai='{$id}' AND sanpham.tinhtrang='{$type}' AND sanpham.soluong > 0 AND  sanpham.tensanpham LIKE '%{$str}%'");
@@ -44,7 +52,7 @@ function get_list_same_category($id)
 }
 
 
-function get_list_product_by_name($id,$name){
+function get_list_product_by_name($id, $name)
+{
     return db_fetch_array("select *from sanpham,theloai where sanpham.id_theloai=theloai.id_theloai AND sanpham.tinhtrang='0'  AND sanpham.id_theloai='{$id}' AND sanpham.tensanpham LIKE '%{$name}%'");
-
 }

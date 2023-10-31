@@ -120,7 +120,7 @@
                         <form action="" method="POST">
                             <input type="text" name="q" id="search" value="" placeholder="Tìm kiếm ......" />
                             <input type="submit" name="btn-search" value="Tìm kiếm">
-                            <div  id="list_search"></div>
+                            <div id="list_search"></div>
                         </form>
                     </div>
                     <?php
@@ -143,9 +143,9 @@
                     <?php
                     } else {
                         if ($_SESSION["role_user"] == 1) {
-                            echo "<div class='user_login'>" . "<p>" . $_SESSION['user_login'] . "</p>                <div class='logout'> <a href='?mod=cart&action=history'>Lịch sử đơn hàng</a> <a href='?mod=login&action=yourinfo'>Xem Thông tin cá nhân</a><a href='?mod=login&action=logout'>Đăng xuất</a></div></div>";
+                            echo "<div class='user_login'>" . "<p>" . $_SESSION['fullname'] . "</p>                <div class='logout'> <a href='?mod=cart&action=history'>Lịch sử đơn hàng</a> <a href='?mod=login&action=yourinfo'>Xem Thông tin cá nhân</a><a href='?mod=login&action=logout'>Đăng xuất</a></div></div>";
                         } else {
-                            echo "<div class='user_login'>" . "<p>" . $_SESSION['user_login'] . "</p> </a>           <div class='logout'> <a href='?mod=cart&action=history'>Lịch sử đơn hàng</a> <a href='?mod=login&action=yourinfo'>Xem Thông tin cá nhân</a><a href='?mod=login&action=logout'>Đăng xuất</a><a href='http://localhost:8080/unitop.vn/project/admin/'>Admin</a> </div></div>";
+                            echo "<div class='user_login'>" . "<p>" . $_SESSION['fullname'] . "</p> </a>           <div class='logout'> <a href='?mod=cart&action=history'>Lịch sử đơn hàng</a> <a href='?mod=login&action=yourinfo'>Xem Thông tin cá nhân</a><a href='?mod=login&action=logout'>Đăng xuất</a><a href='http://localhost/Cuahangdienthoai/website/admin/'>Admin</a> </div></div>";
                         }
                     }
                     ?>

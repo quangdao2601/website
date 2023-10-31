@@ -107,10 +107,12 @@ function loginAction()
             // nếu đúng tk mk thì cấp quyền
             $info_user = get_info_by_username($username);
             $_SESSION["user_login"] = $username;
+            $_SESSION["id_user"]=$info_user['id_user'];
             // $_SESSION["id_user"] = $info_user["id_user"];
 
             // role = 0 là admin 1 là user
             $_SESSION["role_user"] = $info_user["role"];
+            $_SESSION["fullname"] = $info_user["hovaten"];
 
             // đăng nhập xog thì chuyển hướng về trang chủ
             header("location:?mod=home");

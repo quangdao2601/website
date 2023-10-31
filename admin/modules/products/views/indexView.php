@@ -36,13 +36,15 @@ get_sidebar();
         justify-content: center;
     }
 </style>
+
+
 <div id="wp-content">
     <div id="content" class="container-fluid">
         <div class="card">
             <div class="card-header font-weight-bold d-flex justify-content-between align-items-center">
                 <h5 class="m-0 ">Danh sách sản phẩm</h5>
                 <div class="form-search form-inline">
-                    <form action="" style="display: flex;" method="POST">
+                    <form action="" style="display: flex;" method="GET">
                         <input type="text" name="q" class="form-control form-search" placeholder="Tìm kiếm">
                         <input type="submit" name="btn-search" value="Tìm kiếm" class="btn btn-primary">
                     </form>
@@ -54,6 +56,8 @@ get_sidebar();
                     <a href="?mod=products&controller=product&action=listproduct&type=1" <?php if ($type == 1) echo "style='background:red;color:white'" ?>>Đang đợi duyệt</a>
                     <a href="?mod=products&controller=product&action=listproduct&type=2" <?php if ($type == 2) echo "style='background:red;color:white'" ?>>Đã xóa</a>
                 </div>
+
+                <?php echo $string; ?>
 
                 <table class="table table-striped table-checkall">
                     <thead>

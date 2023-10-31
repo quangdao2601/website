@@ -17,8 +17,41 @@ get_sidebar();
                 </div>
                 <h3>Còn hàng</h3>
                 <span class="price"><?php echo currency_format($info_product["dongia"]) ?></span>
-                <a href=""  target="?mod=cart&action=addtocart&id=<?php echo $info_product["id"] ?>" onclick="showconfirm(this);return false" id=<?php echo $info_product["id"] ?> style="text-decoration: none;">Thêm vào giỏ hàng</a>
+                <a href="" target="?mod=cart&action=addtocart&id=<?php echo $info_product["id"] ?>" onclick="showconfirm(this);return false" id=<?php echo $info_product["id"] ?> style="text-decoration: none;">Thêm vào giỏ hàng</a>
             </div>
+        </div>
+        <div class="thembinhluan" style="margin:30px 0px 30px 0px">
+            <h2 style="margin:30px 0px 30px 0px">Bình luận về sản phẩm này</h2>
+
+            <form method="POST" enctype="multipart/form-data">
+                <label style="display: block;margin-bottom:10px" for="Nhập nội dung">Nhập nội dung</label>
+                <input style="padding: 10px; width:300px" type="text" name="comment" value="" placeholder="Nhập nội dung">
+                <input style="padding: 10px;border:none;background:red;color:white" type="submit" name="btn_submit" value="Bình luận" <?php if (!isset($_SESSION['user_login'])) {
+                                                                                                                                            echo "disabled";
+                                                                                                                                        } ?>>
+            </form>
+
+        </div>
+        <div class="binhluansanpham">
+            <h2 style="margin-top: 30px;margin-bottom: 10px;">Bình luận từ người dùng</h2>
+            <?php
+            if (!empty($comments)) {
+                foreach ($comments as $comment) {
+                 
+            ?>
+                    <div class="binhluan" style="display: flex;margin-bottom:20px">
+                        <div class="nguoibinhluan">
+                            <span><strong><?php echo $comment['hovaten'] ?></strong>:</span>
+                        </div>
+                        <div class="noidung">
+                            <span><?php echo $comment['content'] ?></span>
+                        </div>
+                    </div>
+            <?php
+                }
+            }
+            ?>
+
         </div>
 
         <div class="descproduct">
@@ -30,7 +63,7 @@ get_sidebar();
         </div>
 
         <div class="same">
-            <h2 style="margin-bottom: 20px" >Sản phẩm cũng chuyên mục</h2>
+            <h2 style="margin-bottom: 20px">Sản phẩm cũng chuyên mục</h2>
             <script>
                 $(document).ready(function() {
                     var owl = $('.owl-carousel');
@@ -94,3 +127,5 @@ get_sidebar();
 </div>
 <?php
 get_footer();
+
+

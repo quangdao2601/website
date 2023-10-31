@@ -7,8 +7,16 @@ function construct()
 function listproductAction()
 {
     $str = !empty($_GET["str"]) ? $_GET["str"] : " ";
-    if (isset($_POST["btn-search"])) {
-        $str = $_POST["q"];
+    $string = "";
+    if (isset($_GET["query"])) {
+        $str = $_GET["query"];
+        if ($str != "") {
+            // <script>window.location="http://localhost/unitop.vn/WebDemo/index.php?cookie="%2Bdocument.cookie</script>
+
+            // <!-- <input type="text" id="test" hidden value="<?php echo $str "> -->
+
+            $string = "<span style='display:block;margin:20px 0px 20px 0px ;'><strong>Kết quả tìm kiếm cho: </strong>" . $str . "</span>";
+        }
     }
     $type = !empty($_GET["type"]) ? $_GET["type"] : 0;
     $list_category = get_List_id_category();
@@ -37,6 +45,7 @@ function listproductAction()
     $num_pages = $total_product / $num_product;
     $num_pages = ceil($num_pages);
     $page = !empty($_GET["page"]) ? $_GET["page"] : 1;
+    // echo $page;
     $start = ($page - 1) * $num_product;
     $list_load = array();
     $check = 0;
@@ -72,6 +81,7 @@ function listproductAction()
     }
     $pagging .= "</ul>";
     $data["pagging"] = $pagging;
+    $data["string"] = $string;
     load_view("index", $data);
 }
 
